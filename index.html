@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Simple Croppie Upload Demo Example</title>
+
+        <!-- libraries -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.4.0/croppie.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" />
+
+        <!-- see demo.css! -->
+        <link rel="stylesheet" href="/demo.css" />
+
+    </head>
+    <body>
+        <h2>Simple Croppie Upload Demo Example</h2>
+        <p><a href=https://github.com/foliotek/croppie>Croppie</a> is nice, but it's a little bit difficult to use it. So I made a simple working example for uploading demo.</p>
+
+        <div class="demo-wrap upload-demo">
+
+            <div class="actions">
+                <a class="btn file-btn">
+                    <strong>Upload: </strong>
+                    <input type="file" id="upload" value="Choose a file" accept="image/*" />
+                </a>
+                <br /><br />
+                <button class="upload-result">* Show Result *</button>
+            </div>
+
+            <div class="upload-msg">
+                Upload a file to start cropping
+            </div>
+            <div class="upload-demo-wrap">
+                <div id="upload-demo"></div>
+            </div>
+
+        </div>
+
+        <!-- libraries -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.4.0/croppie.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+        <!-- see demo.js! -->
+        <script src="/demo.js"></script>
+        <script>
+            Demo.init();
+        </script>
+
+    </body>
+</html>
